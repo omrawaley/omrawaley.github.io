@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Website</title>
+
+	<script src="script.js"></script> 
+	<link rel="stylesheet" href="stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div>
+		<h1 class="title">Calculators — Om Rawaley</h1>
+
+		<hr>
+	</div>
+
+	<div class="calculatorArea">
+		<h3>Cylinder Volume & Surface Area</h3>
+
+		<input class="inputField" type="text" id="cylinderR" value="r">
+		<input class="inputField" type="text" id="cylinderH" value="h">
+
+		<button class="calculateButton" onclick="calculateCylinder()">Calculate Cylinder V & SA</button>
+	</div>
+
+	<div class="outputArea">
+		<p id="cylinderVOut" class="outputText"></p>
+		<p id="cylinderSAOut" class="outputText"></p>
+	</div>
+
+	<hr>
+
+	<div class="calculatorArea">
+		<h3>Triangular Prism Volume & Surface Area</h3>
+
+		<input class="inputField" type="text" id="triangularPrismA" value="a">
+		<input class="inputField" type="text" id="triangularPrismB" value="b">
+		<input class="inputField" type="text" id="triangularPrismC" value="c">
+		<input class="inputField" type="text" id="triangularPrismH" value="h">
+		<input class="inputField" type="text" id="triangularPrismL" value="l">
+
+		<button class="calculateButton" onclick="calculateTriangularPrism()">Calculate Triangular Prism V & SA</button>
+	</div>
+
+	<div class="outputArea">
+		<p id="triangularPrismVOut" class="outputText"></p>
+		<p id="triangularPrismSAOut" class="outputText"></p>
+	</div>
+
+	<hr>
+
+	<div class="calculatorArea">
+		<h3>Rectangular Prism Volume & Surface Area</h3>
+
+		<input class="inputField" type="text" id="rectangularPrismW" value="w">
+		<input class="inputField" type="text" id="rectangularPrismH" value="h">
+		<input class="inputField" type="text" id="rectangularPrismL" value="l">
+
+		<button class="calculateButton" onclick="calculateRectangularPrism()">Calculate Rectangular Prism V & SA</button>
+	</div>
+
+	<div class="outputArea">
+		<p id="rectangularPrismVOut" class="outputText"></p>
+		<p id="rectangularPrismSAOut" class="outputText"></p>
+	</div>
+	
+</body>
+</html>
