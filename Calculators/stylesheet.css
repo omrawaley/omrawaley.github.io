@@ -34,6 +34,11 @@ h3 {
 	transition: all var(--transition-time);
 }
 
+.calculateButton:active {
+	background-color: #196d1c;
+	transition: all var(--transition-time);
+}
+
 .inputField
 {
 	background-color: skyblue;
