@@ -1,19 +1,3 @@
-<!--
-Copyright 2023 Om Rawaley (@omrawaley)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -33,17 +17,15 @@ limitations under the License.
 
 	<div>
 		<h1 class="title">Calculators — Om Rawaley</h1>
-
-		
 	</div>
 
 	<div class="calculatorArea">
 		<h3>Cylinder Volume & Surface Area</h3>
 
-		<input class="inputField" type="text" id="cylinderR" value="r">
-		<input class="inputField" type="text" id="cylinderH" value="h">
+		<input class="inputField" type="text" id="cylinderR" placeholder="r">
+		<input class="inputField" type="text" id="cylinderH" placeholder="h">
 
-		<button class="calculateButton" onclick="calculateCylinder()">Calculate Cylinder V & SA</button>
+		<button class="calculateButton" onclick="calculateCylinder()">Calculate</button>
 	</div>
 
 	<div class="outputArea">
@@ -54,13 +36,13 @@ limitations under the License.
 	<div class="calculatorArea">
 		<h3>Triangular Prism Volume & Surface Area</h3>
 
-		<input class="inputField" type="text" id="triangularPrismA" value="a">
-		<input class="inputField" type="text" id="triangularPrismB" value="b">
-		<input class="inputField" type="text" id="triangularPrismC" value="c">
-		<input class="inputField" type="text" id="triangularPrismH" value="h">
-		<input class="inputField" type="text" id="triangularPrismL" value="l">
+		<input class="inputField" type="text" id="triangularPrismA" placeholder="a">
+		<input class="inputField" type="text" id="triangularPrismB" placeholder="b">
+		<input class="inputField" type="text" id="triangularPrismC" placeholder="c">
+		<input class="inputField" type="text" id="triangularPrismH" placeholder="h">
+		<input class="inputField" type="text" id="triangularPrismL" placeholder="l">
 
-		<button class="calculateButton" onclick="calculateTriangularPrism()">Calculate Triangular Prism V & SA</button>
+		<button class="calculateButton" onclick="calculateTriangularPrism()">Calculate</button>
 	</div>
 
 	<div class="outputArea">
@@ -71,11 +53,11 @@ limitations under the License.
 	<div class="calculatorArea">
 		<h3>Rectangular Prism Volume & Surface Area</h3>
 
-		<input class="inputField" type="text" id="rectangularPrismW" value="w">
-		<input class="inputField" type="text" id="rectangularPrismH" value="h">
-		<input class="inputField" type="text" id="rectangularPrismL" value="l">
+		<input class="inputField" type="text" id="rectangularPrismW" placeholder="w">
+		<input class="inputField" type="text" id="rectangularPrismH" placeholder="h">
+		<input class="inputField" type="text" id="rectangularPrismL" placeholder="l">
 
-		<button class="calculateButton" onclick="calculateRectangularPrism()">Calculate Rectangular Prism V & SA</button>
+		<button class="calculateButton" onclick="calculateRectangularPrism()">Calculate</button>
 	</div>
 
 	<div class="outputArea">
@@ -86,10 +68,10 @@ limitations under the License.
 	<div class="calculatorArea">
 		<h3>Right-Angle Triangle Hypotenuse</h3>
 
-		<input class="inputField" type="text" id="triangleHypotenuseA" value="a">
-		<input class="inputField" type="text" id="triangleHypotenuseB" value="b">
+		<input class="inputField" type="text" id="triangleHypotenuseA" placeholder="a">
+		<input class="inputField" type="text" id="triangleHypotenuseB" placeholder="b">
 
-		<button class="calculateButton" onclick="calculateTriangleHypotenuse()">Calculate Triangle Hypotenuse</button>
+		<button class="calculateButton" onclick="calculateTriangleHypotenuse()">Calculate</button>
 	</div>
 
 	<div class="outputArea">
@@ -99,15 +81,18 @@ limitations under the License.
 	<div class="calculatorArea">
 		<h3>Right-Angle Triangle Leg</h3>
 
-		<input class="inputField" type="text" id="triangleLegA" value="a">
-		<input class="inputField" type="text" id="triangleLegC" value="c">
+		<input class="inputField" type="text" id="triangleLegA" placeholder="a">
+		<input class="inputField" type="text" id="triangleLegC" placeholder="c">
 
-		<button class="calculateButton" onclick="calculateTriangleLeg()">Calculate Triangle Leg</button>
+		<button class="calculateButton" onclick="calculateTriangleLeg()">Calculate</button>
 	</div>
 
 	<div class="outputArea">
 		<p id="triangleLegOut" class="outputText"></p>
 	</div>
+
+	<br>
+	<br>
 	
 </body>
 </html>
