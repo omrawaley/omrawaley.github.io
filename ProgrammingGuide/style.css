@@ -67,6 +67,10 @@ a:hover {
 	background-color: rgb(143, 148, 174);
 }
 
+a:visited {
+	color: blue;
+}
+
 hr {
 	border-style: solid;
 	border-color: black;
@@ -91,13 +95,30 @@ hr {
 .article-content {
 	gap: 8vh;
 	width: 100%;
-	margin-top: 8vh;
+	margin: 8vh 4vh;
 	animation: fadeIn 700ms;
-	flex: 1 1 90%;
+	flex: 1 1 80%;
 }
 
 .sidebar-content {
-	flex: 1 1 10%;
+	flex: 1 1 20%;
+	border-right: 4px solid;
+	padding-top: 40px;
+}
+
+.sidebar-content > * {
+	position: sticky;
+	top: 40px;
+}
+
+.sidebar-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sidebar-link {
+	margin-top: 10px;
 }
 
 .header {
@@ -120,7 +141,7 @@ hr {
 	top: -4px;
     border-bottom: 4px solid blue;
 	border-radius: 40px;
-	animation: overlineTransition 0.5s;
+	animation: overlineTransition 0.6s ease;
 }
 
 .tech-stack {
